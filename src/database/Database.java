@@ -12,8 +12,10 @@ public class Database {
 		if (connection != null) {
 			
 			try {
+				
 				connection.close();
 				connection = null;
+				
 			}
 			catch (SQLException ignored) {}
 			
@@ -26,8 +28,10 @@ public class Database {
 		if (statement != null) {
 			
 			try {
+				
 				statement.close();
 				statement = null;
+				
 			}
 			catch (SQLException ignored) {}
 			
@@ -40,8 +44,10 @@ public class Database {
 		if (resultSet != null) {
 			
 			try {
+				
 				resultSet.close();
 				resultSet = null;
+				
 			}
 			catch (SQLException ignored) {}
 			
